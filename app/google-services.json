@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "761576445646",
+    "firebase_url": "https://icu-app-5908d.firebaseio.com",
+    "project_id": "icu-app-5908d",
+    "storage_bucket": "icu-app-5908d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761576445646:android:37d4a9ddb7ad0363",
+        "android_client_info": {
+          "package_name": "com.papertrails.icu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761576445646-rmijvj0gli2lqmskmcesv4d3fm8n4e7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvXIsEYUBR41UlEzKJivXoCsnOL66UoP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
