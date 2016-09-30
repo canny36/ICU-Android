@@ -15,7 +15,6 @@ import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -23,10 +22,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -47,6 +44,8 @@ public class LocationService extends Service {
 
     @Override
     public void onCreate() {
+
+
         super.onCreate();
         Log.v("LocationService","onCreate");
         cnnxManager = (ConnectivityManager)
@@ -65,8 +64,6 @@ public class LocationService extends Service {
         sendMessage();
 
         return START_STICKY;
-
-
     }
 
     @Nullable
@@ -74,7 +71,6 @@ public class LocationService extends Service {
     public IBinder onBind(Intent intent) {
         return null;
     }
-
 
     private void sendMessage(){
 
@@ -99,11 +95,15 @@ public class LocationService extends Service {
             json.put("to","/topics/news");
             JSONObject data = new JSONObject();
             data.put("name",getName());
+
             if(currentLocation != null){
-                data.put("location",""+currentLocation.toString());
+                data.put("lat",currentLocation.getLatitude());
+                data.put("lng",currentLocation.getLongitude());
             }else{
-                data.put("location"," CurrentLocation");
+                data.put("lat",0);
+                data.put("lng",0);
             }
+
             data.put("time",format);
 
             json.put("data",data);
@@ -152,7 +152,6 @@ public class LocationService extends Service {
 
             if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 // Request for permession
-
 
             }
 

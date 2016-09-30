@@ -11,22 +11,28 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.List;
 
+import static papertrails.n452202.icu.R.id.map;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private BroadcastReceiver broadcastReceiver;
     private ListView listView;
+    private MapView mapView;
+    private GoogleMap googleMap;
 
 
     @Override
@@ -35,32 +41,70 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        mapView =  (MapView)findViewById(map);
+        mapView.getMapAsync(this);
+        mapView.onCreate(savedInstanceState);
+
         FirebaseMessaging.getInstance().subscribeToTopic("news");
-//        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-
-         listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(new MessageAdapter(this,fetchMessages()));
-
         checkPermessions();
 
     }
 
+
     @Override
     protected void onResume() {
         super.onResume();
-
+        mapView.onResume();
         registerMsgReceiver();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        mapView.onStop();
         unRegisterMsgReceiver();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.history){
+            startActivity(new Intent(MainActivity.this,HistoryActivity.class));
+        }else if(item.getItemId() == R.id.refresh){
+            refreshMarkersOnMap();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private List<LocMessage> fetchMessages(){
@@ -80,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        sendMessage();
+        startLocationService();
 
     }
 
@@ -91,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == 101){
                 if (canAccessLocation()){
 
-                    sendMessage();
+                    startLocationService();
                 }
         }
     }
@@ -107,62 +151,11 @@ public class MainActivity extends AppCompatActivity {
         
         
     }
-    private void sendMessage(){
+    private void startLocationService(){
 
         Intent intent = new Intent();
         intent.setAction("com.papertrails.CUSTOM_INTENT");
         sendBroadcast(intent);
-
-//        FirebaseMessaging fm = FirebaseMessaging.getInstance();
-//        fm.send(new RemoteMessage.Builder("https://fcm.googleapis.com/fcm/send")
-//                .addData("my_message", "Hello World")
-//                .addData("my_action","SAY_HELLO")
-//                .build());
-//
-
-//        RequestQueue queue = Volley.newRequestQueue(this);
-//        String url ="https://fcm.googleapis.com/fcm/send";
-//
-//        JSONObject json = new JSONObject();
-//        try{
-//            json.put("to","/topics/news");
-//            JSONObject data = new JSONObject();
-//            data.put("message","Message from Srini");
-//            data.put("loc","MyHome");
-//            json.put("data",data);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//
-//        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-//                (Request.Method.POST, url, json, new Response.Listener<JSONObject>() {
-//
-//                    @Override
-//                    public void onResponse(JSONObject response) {
-//
-//
-//                        Log.v("MainActivity",response.toString());
-//                    }
-//                }, new Response.ErrorListener() {
-//
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        Log.e("MainActivity",error.toString());
-//
-//                    }
-//                }){
-//
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                HashMap<String, String> headers = new HashMap<String, String>();
-//                headers.put("Content-Type", "application/json");
-//                headers.put("Authorization","key=AIzaSyAhl4l0UyAAqB2uz1eyDQGuaV1H0t9zq2Q");
-//                return headers;
-//            }
-//        };
-//
-//        ApplicationController.getInstance().addToRequestQueue(jsObjRequest);
-
 
     }
 
@@ -186,8 +179,7 @@ public class MainActivity extends AppCompatActivity {
        broadcastReceiver =  new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
-                listView.setAdapter(new MessageAdapter(MainActivity.this,fetchMessages()));
-
+                refreshMarkersOnMap();
             }
         };
 
@@ -200,66 +192,32 @@ public class MainActivity extends AppCompatActivity {
         unregisterReceiver(broadcastReceiver);
     }
 
-
-    public static class MessageAdapter extends ArrayAdapter<LocMessage> {
-
-        private Context context;
-        private List<LocMessage> items;
-        private MessageVH messageVh;
-
-        public MessageAdapter(Context context, List<LocMessage> objects) {
-            super(context, -1, objects);
-            this.items = objects;
-            this.context = context;
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        this.googleMap = googleMap;
+        this.googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        List<LocMessage> messages =  LocMessage.getAll();
+        for( LocMessage message : messages){
+            googleMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(message.getLat(), message.getLng()))
+                    .title(message.getName()));
         }
-
-        @Override
-        public int getCount() {
-            return this.items.size();
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            if (convertView == null) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.layout_msg, null);
-                messageVh = new MessageVH(convertView);
-                convertView.setTag(messageVh);
-            }else{
-
-                messageVh = (MessageVH) convertView.getTag();
-            }
-
-            LocMessage message =  this.items.get(position);
-            messageVh.updataView(message);
-
-            return convertView;
-        }
-
-
-        public   class MessageVH{
-
-            public TextView nameTextView;
-            public  TextView locTextView;
-            public  TextView timeTextView;
-
-            public  MessageVH(View view){
-
-                nameTextView =  ((TextView) view.findViewById(R.id.textView));
-                locTextView =  ((TextView) view.findViewById(R.id.textView2));
-                timeTextView =  ((TextView) view.findViewById(R.id.textView3));
-
-            }
-
-            public  void  updataView(LocMessage locMessage){
-
-                nameTextView.setText(locMessage.getName());
-                locTextView.setText(locMessage.getLocStr());
-                timeTextView.setText(locMessage.getTime());
-
-            }
-
-        }
-
     }
+
+
+    private  void refreshMarkersOnMap(){
+        this.googleMap.clear();
+        List<LocMessage> messages =  LocMessage.getAll();
+        for( LocMessage message : messages){
+            googleMap.setMaxZoomPreference(17);
+
+            googleMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(message.getLat(), message.getLng()))
+                    .title(message.getName()));
+        }
+    }
+
+
+
 
 }

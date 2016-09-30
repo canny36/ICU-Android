@@ -24,21 +24,25 @@
             android:value="Pickrand.db" />
         <meta-data
             android:name="AA_DB_VERSION"
-            android:value="5" />
+            android:value="6" />
         <meta-data
             android:name="AA_MODELS"
             android:value="papertrails.n452202.icu.LocMessage" />
 
-        <activity android:name=".MainActivity">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC5gInUPp7Xk3ZSYCDe_GQbNhUuzlR8L84"/>
 
-        </activity>
+
+
+
+
+        <activity android:name=".MainActivity" />
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".LocationService"></service>
+        <service android:name=".LocationService" />
         <service android:name=".MyFirebaseInstanceIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -49,7 +53,7 @@
             android:name=".LaunchReceiver"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="com.papertrails.CUSTOM_INTENT"></action>
+                <action android:name="com.papertrails.CUSTOM_INTENT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -66,6 +70,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".HistoryActivity"></activity>
     </application>
 
 </manifest>

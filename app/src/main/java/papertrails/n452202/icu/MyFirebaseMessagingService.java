@@ -29,7 +29,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getData().size() > 0) {
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
                 Map data = remoteMessage.getData();
-            LocMessage locMessage = new LocMessage((String) data.get("name"),(String) data.get("location"),(String) data.get("time"));
+            LocMessage locMessage = new LocMessage((String) data.get("name"),Double.valueOf((String) data.get("lat")),Double.valueOf((String) data.get("lng")),(String) data.get("time"));
             locMessage.save();
 
             Intent intent = new Intent();

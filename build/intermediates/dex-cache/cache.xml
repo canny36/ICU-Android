@@ -3,6 +3,159 @@
 
     <item
         is-multidex="true"
+        jar="/Users/n452202/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_b38ccbfa39ab2fcc723e3884b44c19bc8a2061e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_d62333e7ac773bfb7cb86ea3a08b05594e2c86e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_e555dabdb16c174af20c69cb74d373b32d63cc63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.0_ef574ac184bf79e30003f21665fcc23dac42775b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_8d9f24bf2e3bd4147eb60e2d3f2f7b52102142b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_faf8c0fe75539d2c145b2e9cabecda983562660c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_676c5d49d5a7a016f37129903f2e8a01661ceacc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_89d28eb8733b2c179542dd5068de18aac97b98c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_0e9f9d047db6cce650de6ded91a431b94c42df75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_16af07eadfdb236a596ef86d9bc918e0d94ccd6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_820f726ceff83fee9a8a94e4845d4398941a85d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_4692efa1eff5cc46e400426c0df760161fb3bffe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.github.satyan/sugar/1.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac045b53684345f4ec8468477e8fc5034d0d2bfd">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.satyan-sugar-1.4_f16669e3e8bffaeb3f0cd090b719159eeccb0303/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.0_8a09015bce584de171400c32d929efebc44aa620/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.0_148d62d8ef49473beb1c0592c7af60dadb3b6817/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_097b5cb1aa7c6c1e2456584b206def9963324aa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_63ccc5ccc9f136fb337a0fd74bef45df4ce47324/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -21,15 +174,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.0_d62333e7ac773bfb7cb86ea3a08b05594e2c86e8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar"
         jumboMode="true"
         optimize="true"
@@ -43,17 +187,17 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="858531e8ca24dc08a9e43f56e1441753c17f5dec">
+        sha1="2b27873302a3a421a10cdcf84e865feafda6c674">
         <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1d46ad2fd6f3de67d928523308e1de1820ca7807/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_e4fcfd83b523fd9cd25661ae9042491be7f3e55f/classes.dex" />
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_5786562232ac457696a04bc8026b94941a14785f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,39 +210,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.0/jars/classes.jar"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.0_faf8c0fe75539d2c145b2e9cabecda983562660c/classes.dex" />
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_33c7d9d6c48e44200974272855539de679ceb59a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="673d77a5bbddd766037f088e775df525c46407f0">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.1_35fa42cd56879f5e7f962032d54a186195122102/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.1_cfaf481761a84996d9eba97dcbd19ad52bb744d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.0_0e9f9d047db6cce650de6ded91a431b94c42df75/classes.dex" />
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_7ec0607e2761d5e55ed7ade565aaca8051b23360/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,21 +237,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_bd0392c47c38ba9e702859616e698c935311fdb2/classes.dex" />
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_e48409d6cd734a6bdc3ccb25d90dcfea4048b64f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_06d00bd3a837e05443b882f12cec6fd1ce05e7b4/classes.dex" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9ccd81fe38d29ccfe7e58a00087e9903fa96d30e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_41829c63b2b0a93fb174bf0ead69acb7936454e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c253f3349954ae62bb1a35bb7c2948f96b4d5975/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -142,35 +286,8 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="486bd5e862ce658746b1e71b56afbe0d8fd3f450">
+        sha1="00275c2887e9ba1b7de29d7abedb7d9f1cc44441">
         <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_abd4f9c7642241f4fa7f7deb5daef3d1c1fd3964/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.1_99840ac31ebba83cda6bd106890b264683f2ca31/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.github.satyan/sugar/1.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ac045b53684345f4ec8468477e8fc5034d0d2bfd">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.satyan-sugar-1.4_f16669e3e8bffaeb3f0cd090b719159eeccb0303/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
-        <dex dex="/Users/n452202/Documents/AndroidApps/ICU/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.0_148d62d8ef49473beb1c0592c7af60dadb3b6817/classes.dex" />
     </item>
 
 </items>
